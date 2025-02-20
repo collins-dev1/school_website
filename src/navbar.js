@@ -1,8 +1,9 @@
-import my_image from "./asset/ogcollinscollege.jpg";
+import my_image from "./asset/ogcollinscollegemain.png";
+// import {Link} from "react-router-dom";
 
 const Navbar = () => {
     return ( 
-        <div className="navbar">
+        <div className="navba">
             <div className="nav-logo">
                 <img src={my_image} width="100px" height="100px"/>
             </div>
