@@ -1,8 +1,10 @@
+import my_image from "./asset/ogcollinscollege.jpg";
+
 const Navbar = () => {
     return ( 
         <div className="navbar">
             <div className="nav-logo">
-                <img></img>
+                <img src={my_image} width="100px" height="100px"/>
             </div>
             <div className="nav-link">
                 <ul>
@@ -10,8 +12,15 @@ const Navbar = () => {
                     <li><a href="">About Us</a></li>
                     <li><a href="">Contact Us</a></li>
                     <li><a href="">Blog</a></li>
-                    <li><a href="">Register</a></li>
                 </ul>
+            </div>
+            <div className="nav-button">
+                <a href="">
+                    <button>Login</button>
+                </a>
+                <a href="">
+                    <button>Register</button>
+                </a>
             </div>
         </div>
      );
