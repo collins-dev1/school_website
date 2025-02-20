@@ -3,7 +3,7 @@ import my_image from "./asset/ogcollinscollegemain.png";
 
 const Navbar = () => {
     return ( 
-        <div className="navba">
+        <div className="navba fixed-top">
             <div className="nav-logo">
                 <img src={my_image} width="100px" height="100px"/>
             </div>
