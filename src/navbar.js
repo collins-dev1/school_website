@@ -1,5 +1,5 @@
 import my_image from "./asset/ogcollinscollegemain.png";
-// import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
     return ( 
@@ -9,10 +9,10 @@ const Navbar = () => {
             </div>
             <div className="nav-link">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="">Contact Us</Link></li>
+                    <li><Link to="">Blog</Link></li>
                 </ul>
             </div>
             <div className="nav-button">

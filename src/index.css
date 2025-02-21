@@ -27,11 +27,12 @@
 .navba .nav-link ul li a{
   text-decoration: none;
   font-size: 1.2rem;
+  color: #fff;
 }
 
 .navba .nav-link ul li a:hover{
-  text-decoration: underline double #00195F;
-  color: #00195F;
+  text-decoration: underline double #FFF605;
+  color: #FFF605;
   transition: all 0.5s 0.9ms ease-in;
 }
 
