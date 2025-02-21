@@ -1,11 +1,12 @@
 import school_pic from "./asset/school_picture1.jpeg";
 import school_pic1 from "./asset/school_picture2.jpeg";
 import school_pic2 from "./asset/school_picture3.jpeg";
+import line from "./asset/line.png";
 
 
 const Home = () => {
     return (
-        <div>
+        <main>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -55,10 +56,37 @@ const Home = () => {
                 </button>
             </div>
 
-            <div>
-                
+            {/* Total section */}
+            <div className="total">
+                <div>
+                    <h5>250+</h5>
+                    <p>Total Courses</p>
+                </div>
+                <div>
+                    <h5>300+</h5>
+                    <p>Total Instractor</p>
+                </div>
+                <div>
+                    <h5>35k+</h5>
+                    <p>Total Students</p>
+                </div>
+                <div>
+                    <h5>42k+</h5>
+                    <p>Total Seat</p>
+                </div>
             </div>
-        </div>
+
+           {/* Working process section */}
+           <div className="working">
+              <div className="working-text">
+                <h3>Working Process and Benefits</h3>
+                <img src={line}/>
+              </div>
+              <div>
+                
+              </div>
+           </div>
+        </main>
     );
 }
 
