@@ -2,6 +2,7 @@ import school_pic from "./asset/school_picture1.jpeg";
 import school_pic1 from "./asset/school_picture2.jpeg";
 import school_pic2 from "./asset/school_picture3.jpeg";
 import line from "./asset/line.png";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src={school_pic} class="d-block w-100" alt="..." />
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption">
                             <h5 className="display-5" style={{
                                 color: "#FFF605",
                                 fontWeight: "bold",
@@ -23,7 +24,7 @@ const Home = () => {
                     </div>
                     <div class="carousel-item">
                         <img src={school_pic1} class="d-block w-100" alt="..." />
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption">
                             <h5 className="display-5" style={{
                                 color: "#FFF605",
                                 fontWeight: "bold",
@@ -35,7 +36,7 @@ const Home = () => {
                     </div>
                     <div class="carousel-item">
                         <img src={school_pic2} class="d-block w-100" alt="..." />
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption">
                             <h5 className="display-5" style={{
                                 color: "#FFF605",
                                 fontWeight: "bold",
@@ -76,16 +77,33 @@ const Home = () => {
                 </div>
             </div>
 
-           {/* Working process section */}
-           <div className="working">
-              <div className="working-text">
-                <h3>Working Process and Benefits</h3>
-                <img src={line}/>
-              </div>
-              <div>
-                
-              </div>
-           </div>
+            {/* Working process section */}
+            <div className="working">
+                <div className="working-text">
+                    <h3>Working Process and Benefits</h3>
+                    <img src={line} />
+                </div>
+                <div className="working-container">
+                    <Link>
+                        <div>
+                            <div className="search"><i className="ri-search-line"></i></div>
+                            <h6>Find Course</h6>
+                        </div>
+                    </Link>
+                    <Link>
+                        <div>
+                            <div className="book"><i class="ri-add-circle-fill"></i></div>
+                            <h6>Book Seat</h6>
+                        </div>
+                    </Link>
+                    <Link>
+                        <div>
+                            <div className="award"><i class="ri-medal-2-line"></i></div>
+                            <h6>Find Course</h6>
+                        </div>
+                    </Link>
+                </div>
+            </div>
         </main>
     );
 }

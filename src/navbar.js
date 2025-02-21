@@ -1,13 +1,49 @@
 import my_image from "./asset/ogcollinscollegemain.png";
 import {Link} from "react-router-dom";
+import React, {useState, useEffect} from "react";
 
 const Navbar = () => {
+    const [navbar, setNavbar] = useState(false);
+    const [navlink, setNavlink] = useState(false);
+
+    const changeNavlink = () => {
+        if(window.scrollY >= 80){
+            setNavlink(true);
+        }
+        else{
+            setNavlink(false);
+        }
+    };
+
+    const changeBackground = () => {
+        if(window.scrollY >= 80){
+            setNavbar(true);
+        }
+        else{
+            setNavbar(false)
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", changeBackground);
+        return () => {
+            window.removeEventListener("scroll", changeBackground);
+        }
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener("scroll", changeNavlink);
+        return () => {
+            window.removeEventListener("scroll", changeNavlink);
+        }
+    }, []);
+
     return ( 
-        <div className="navba fixed-top">
+        <nav className={navbar ? "navba navbar-active" : "navba"}>
             <div className="nav-logo">
                 <img src={my_image} width="100px" height="100px"/>
             </div>
-            <div className="nav-link">
+            <div className={navlink ? "nav-link nav-link-active" : "nav-link"}>
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About Us</Link></li>
@@ -23,7 +59,7 @@ const Navbar = () => {
                     <button>Register</button>
                 </a>
             </div>
-        </div>
+        </nav>
      );
 }
  
