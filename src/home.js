@@ -98,9 +98,19 @@ const Home = () => {
                     </Link>
                     <Link>
                         <div>
-                            <div className="award"><i class="ri-medal-2-line"></i></div>
+                            <div className="award"><i class="ri-medal-line"></i></div>
                             <h6>Find Course</h6>
                         </div>
+                    </Link>
+                </div>
+            </div>
+
+            {/* Popular Courses */}
+            <div>
+                <div className="popular_course">
+                    <h3>Our Popular Courses</h3>
+                    <Link>
+                        <button>VIEW ALL</button>
                     </Link>
                 </div>
             </div>

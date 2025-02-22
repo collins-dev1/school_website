@@ -41,7 +41,9 @@ const Navbar = () => {
     return ( 
         <nav className={navbar ? "navba navbar-active" : "navba"}>
             <div className="nav-logo">
+                <Link to="/">
                 <img src={my_image} width="100px" height="100px"/>
+                </Link>
             </div>
             <div className={navlink ? "nav-link nav-link-active" : "nav-link"}>
                 <ul>
