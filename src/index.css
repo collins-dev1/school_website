@@ -244,4 +244,48 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+}
+
+.popular_course button{
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #00195F;
+  color: #fff ;
+  border:  2px solid transparent;
+}
+
+.popular_course button:hover{
+  background-color: #FFF605;
+  color: #000;
+  border: 2px solid #00195F;
+  transition: all 0.5s 0.9ms ease-in-out;
+}
+
+#card-holder img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#card-holder .card{
+  border-radius: 15px;
+}
+
+#card-holder .card .card-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#card-holder .card .card-body span{
+  color: #00195F;
+}
+
+#card-holder .card .card-body h5{
+  font-weight: bold;
 }
