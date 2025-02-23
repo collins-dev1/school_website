@@ -298,5 +298,24 @@
 .footer-icons{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-icons div{
+  padding: 5px;
+  background-color: #00195F;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+}
+
+.footer-icons div:hover{
+  background-color: #FFF605;
+  color: #000;
+  border: 2px solid #00195F;
+  transition: all 0.5s 0.9ms ease-in-out;
 }
