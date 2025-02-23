@@ -11,7 +11,7 @@ const Footer = () => {
                             <Link to="/">
                                 <img src={logo} width="100px" height="100px" />
                             </Link>
-                            <p>Contrary to popular is not simply random text it has</p>
+                            <p className="text-center">Contrary to popular is not<br/> simply random text it has</p>
                             <div className="footer-icons">
                                 <div>
                                     <i class="ri-facebook-fill"></i>
