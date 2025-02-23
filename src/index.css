@@ -289,3 +289,14 @@
 #card-holder .card .card-body h5{
   font-weight: bold;
 }
+
+#footer{
+  background-image: linear-gradient(to bottom right, #FFF605,#00195F);
+  padding: 4rem;
+}
+
+.footer-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

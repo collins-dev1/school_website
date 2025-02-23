@@ -1,4 +1,5 @@
 import AboutUs from './about';
+import Footer from './footer';
 import Home from './home';
 import Navbar from './navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
@@ -18,6 +19,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer/>
       </div>
     </Router>
   );
