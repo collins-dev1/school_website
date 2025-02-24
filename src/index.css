@@ -398,3 +398,10 @@
   text-align: center;
   margin-top: 1rem;
 }
+
+.about-second{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
