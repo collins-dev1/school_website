@@ -1,4 +1,5 @@
 import AboutUs from './about';
+import Contact from './contact';
 import Footer from './footer';
 import Home from './home';
 import Navbar from './navbar';
@@ -16,6 +17,9 @@ function App() {
             </Route>
             <Route path="/about">
               <AboutUs/>
+            </Route>
+            <Route path="/contact">
+              <Contact/>
             </Route>
           </Switch>
         </div>
