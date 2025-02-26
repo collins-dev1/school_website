@@ -9,6 +9,11 @@ const Contact = () => {
                     <p>Have questions or need assistance? Get in touch with us! We're here to help and look forward to hearing from you.</p>
                 </div>
             </div>
+            <div>
+                <div>
+                    
+                </div>
+            </div>
         </div>
     );
 }
