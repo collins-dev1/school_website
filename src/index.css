@@ -523,3 +523,55 @@ transition: all 0.3s ease-in-out;
   text-align: center;
   margin-top: 1rem;
 }
+
+.main-contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.full-name input{
+  width: 100%;
+}
+
+.form-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-button button{
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  background-color: #00195F;
+  color: #fff;  
+  border-radius: 10px;
+  font-size: 1rem;
+  border: 2px solid transparent;
+}
+
+.form-button button:hover{
+  background-color: #FFF605;
+  color: #000;
+  border: 2px solid #00195F;
+  transition: all 0.5s 0.9ms ease-in-out;
+  box-shadow:  
+    6px 6px 15px rgba(0, 0, 0, 0.3),  
+    -6px -6px 15px rgba(255, 255, 255, 0.9); 
+  transform: translateY(-3px);
+}
+
+.contact-texting{
+  padding: 5rem;
+}
