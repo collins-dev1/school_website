@@ -35,15 +35,15 @@ function App() {
   );
 }
 
-const Log = () => {
-  return (
-    <Router>
-      <div className='App'>
-        <Route path="/login">
-          <Login />
-        </Route>
-      </div>
-    </Router>
-  )
-}
+// const Log = () => {
+//   return (
+//     <Router>
+//       <div className='App'>
+//         <Route path="/login">
+//           <Login />
+//         </Route>
+//       </div>
+//     </Router>
+//   )
+// }
 export default App;
