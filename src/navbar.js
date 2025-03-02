@@ -54,12 +54,12 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="nav-button">
-                <a href="">
+                <Link to="/login">
                     <button>Login</button>
-                </a>
-                <a href="">
+                </Link>
+                <Link to="/signup">
                     <button>Register</button>
-                </a>
+                </Link>
             </div>
         </nav>
         // <nav class="navbar navbar-expand-lg bg-body-tertiary">

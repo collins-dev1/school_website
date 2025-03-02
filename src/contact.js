@@ -45,6 +45,57 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Unit Location */}
+            <div className="container mt-5">
+                <div className="row row-cols-1 row-cols-md-5 row-cols-lg-5 g-3">
+                    <div className="col">
+                        <div>
+                            <h3>Unit 1</h3>
+                            <hr/>
+                            <p>MM Jessor</p>
+                            <p>Jessor</p>
+                            <span>Phone 090884844</span>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div>
+                            <h3>Unit 1</h3>
+                            <hr/>
+                            <p>MM Jessor</p>
+                            <p>Jessor</p>
+                            <span>Phone 090884844</span>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div>
+                            <h3>Unit 1</h3>
+                            <hr/>
+                            <p>MM Jessor</p>
+                            <p>Jessor</p>
+                            <span>Phone 090884844</span>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div>
+                            <h3>Unit 1</h3>
+                            <hr/>
+                            <p>MM Jessor</p>
+                            <p>Jessor</p>
+                            <span>Phone 090884844</span>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div>
+                            <h3>Unit 1</h3>
+                            <hr/>
+                            <p>MM Jessor</p>
+                            <p>Jessor</p>
+                            <span>Phone 090884844</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
