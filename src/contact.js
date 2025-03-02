@@ -36,7 +36,7 @@ const Contact = () => {
                             </div>
                             <div className="mt-4">
                                 <label>Text Message</label>
-                                <textarea className="form-control"></textarea>
+                                <textarea className="form-control" rows={6}></textarea>
                             </div>
                             <div className="form-button mt-4">
                                 <button>Get in Touch</button>

@@ -534,13 +534,13 @@ transition: all 0.3s ease-in-out;
 .full-name{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .full-name input{
-  width: 100%;
+  width: 300px;
 }
 
 .form-button{
