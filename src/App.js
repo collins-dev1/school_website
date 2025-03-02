@@ -1,4 +1,5 @@
 import AboutUs from './about';
+import Blog from './blog';
 import Contact from './contact';
 import Footer from './footer';
 import Home from './home';
@@ -20,6 +21,9 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contact/>
+            </Route>
+            <Route path="/blog">
+              <Blog/>
             </Route>
           </Switch>
         </div>
