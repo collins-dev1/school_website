@@ -6,6 +6,7 @@ import Home from './home';
 import Login from './login';
 import Navbar from './navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
+import Signup from './signup';
 
 function App() {
   return (
@@ -26,24 +27,19 @@ function App() {
             <Route path="/blog">
               <Blog />
             </Route>
+            <Route path="/login">
+            <Login/>
+            </Route>
+            <Route path="/signup">
+              <Signup/>
+            </Route>
           </Switch>
         </div>
         <Footer />
 
       </div>
+      
     </Router>
   );
 }
-
-// const Log = () => {
-//   return (
-//     <Router>
-//       <div className='App'>
-//         <Route path="/login">
-//           <Login />
-//         </Route>
-//       </div>
-//     </Router>
-//   )
-// }
 export default App;
