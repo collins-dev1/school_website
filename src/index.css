@@ -767,3 +767,7 @@ transition: all 0.3s ease-in-out;
 .signingup p{
   color: #000;
 }
+
+.signingup a{
+  text-decoration: none;
+}
