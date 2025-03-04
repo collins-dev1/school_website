@@ -15,11 +15,14 @@ const Login = () => {
                 <div>
                     <input type="password" className="form-control" placeholder="Password" />
                 </div>
-                <div>
+                <div className="forget">
                     <Link>Forget Password</Link>
                 </div>
-                <div>
+                <div className="login-button">
                     <button>Login</button>
+                </div>
+                <div className="signingup">
+                    <p>Don't have account? <Link>Sign Up</Link></p>
                 </div>
             </div>
         </div>
