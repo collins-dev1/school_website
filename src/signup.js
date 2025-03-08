@@ -15,11 +15,11 @@ const Signup = () => {
                 <div>
                     <input type="password" className="form-control" placeholder="Password" />
                 </div>
-                <div>
-                    <Link>Forget Password</Link>
-                </div>
-                <div>
+                <div className="signup-button">
                     <button>Register</button>
+                </div>
+                <div className="signingup">
+                    <p>Don't have account? <Link>Sign Up</Link></p>
                 </div>
             </div>
         </div>

@@ -757,11 +757,27 @@ transition: all 0.3s ease-in-out;
   transform: translateY(-3px);
 }
 
-.signingup{
+.signup-main{
+  width: 100%;
+  background-image: url(/public/school_background.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.signup-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 0.7); /* Black with 50% opacity */
+  z-index: 1;
 }
 
 .signingup p{
@@ -770,4 +786,73 @@ transition: all 0.3s ease-in-out;
 
 .signingup a{
   text-decoration: none;
+}
+
+.signup-main h1{
+  font-size: 3rem;
+  color: #fff;
+}
+
+.signup-main p{
+  color: #fff;
+}
+
+.signup-text{
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-container{
+  background-color: #BFCFE7;
+  width: 100%;
+  z-index: 2;
+  padding: 4.1rem;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.signup-container h3{
+  color: #00195F;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.signup-container input{
+  border-radius: 2rem;
+  padding-inline: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.signup-container .signup-button{
+  width: 100%;
+}
+
+.signup-button button{
+  width: 100%;
+  padding: 0.8rem 0.8rem;
+  background-color: #00195F;
+  outline: none;
+  border-radius: 2rem;
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.signup-button button:hover{
+  background-color: #FFF605;
+  color: #000;
+  border: 2px solid #00195F;
+  transition: all 0.5s 0.9ms ease-in-out;
+  box-shadow:  
+    6px 6px 15px rgba(0, 0, 0, 0.3),  
+    -6px -6px 15px rgba(255, 255, 255, 0.9); 
+  transform: translateY(-3px);
 }
