@@ -19,7 +19,7 @@ const Signup = () => {
                     <button>Register</button>
                 </div>
                 <div className="signingup">
-                    <p>Don't have account? <Link>Sign Up</Link></p>
+                    <p>Already have an Account? <Link>Login</Link></p>
                 </div>
             </div>
         </div>
