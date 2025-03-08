@@ -784,6 +784,14 @@ transition: all 0.3s ease-in-out;
   color: #000;
 }
 
+.logining span{
+  color: #000;
+}
+
+.logining a{
+  text-decoration: none;
+}
+
 .signingup a{
   text-decoration: none;
 }

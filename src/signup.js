@@ -18,8 +18,8 @@ const Signup = () => {
                 <div className="signup-button">
                     <button>Register</button>
                 </div>
-                <div className="signingup">
-                    <p>Already have an Account? <Link>Login</Link></p>
+                <div className="logining">
+                    <span>Already have an Account? <Link>Login</Link></span>
                 </div>
             </div>
         </div>
