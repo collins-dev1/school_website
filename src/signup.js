@@ -19,6 +19,19 @@ const Signup = () => {
                     <input type="email" className="form-control" placeholder="Email" />
                 </div>
                 <div>
+                    <input type="date" className="form-control" placeholder="Date of Birth"/>
+                </div>
+                <div>
+                    <select className="form-control">
+                        <option selected disabled>--Select your Gender--</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" className="form-control" placeholder="Home Address"/>
+                </div>
+                <div>
                     <input type="password" className="form-control" placeholder="Password" />
                 </div>
                 <div className="signup-button">
