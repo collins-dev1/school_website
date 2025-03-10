@@ -724,6 +724,24 @@ transition: all 0.3s ease-in-out;
   padding-bottom: 0.8rem;
 }
 
+.signup-container select{
+  border-radius: 2rem;
+  padding-inline: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.country{
+  max-width: 100% !important;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
 .login-container .forget a{
   display: flex;
   flex-direction: column;

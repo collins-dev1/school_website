@@ -36,14 +36,14 @@ const Signup = () => {
                     </select>
                 </div>
                 <div>
-                    <CountryDropdown
+                    <CountryDropdown className="country"
                         value={country}
                         onChange={(e, value) => setCountry(value)}
                         placeholder="Select Country" 
                     />
                 </div>
                 <div>
-                    <StateDropdown
+                    <StateDropdown className="country"
                         country={country}
                         value={state}
                         onChange={(e, value) => setState(value)}
