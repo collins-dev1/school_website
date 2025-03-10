@@ -8,7 +8,13 @@ const Signup = () => {
                 <p>Welcome to OG COLLINS College</p>
             </div>
             <div className="signup-container">
-                <h3>Login</h3>
+                <h3>Register</h3>
+                <div>
+                    <input type="text" className="form-control" placeholder="Full Name"/>
+                </div>
+                <div>
+                    <input type="tel" className="form-control" placeholder="Phone Number"/>
+                </div>
                 <div>
                     <input type="email" className="form-control" placeholder="Email" />
                 </div>
