@@ -1,7 +1,14 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import {
+    CountryDropdown,
+    StateDropdown,
+} from 'react-country-state-dropdown';
 
 const Signup = () => {
-    return ( 
+    const [country, setCountry] = useState('');
+    const [state, setState] = useState('');
+    return (
         <div className="signup-main">
             <div className="signup-text">
                 <h1>Hello!</h1>
@@ -10,16 +17,16 @@ const Signup = () => {
             <div className="signup-container">
                 <h3>Register</h3>
                 <div>
-                    <input type="text" className="form-control" placeholder="Full Name"/>
+                    <input type="text" className="form-control" placeholder="Full Name" />
                 </div>
                 <div>
-                    <input type="tel" className="form-control" placeholder="Phone Number"/>
+                    <input type="tel" className="form-control" placeholder="Phone Number" />
                 </div>
                 <div>
                     <input type="email" className="form-control" placeholder="Email" />
                 </div>
                 <div>
-                    <input type="date" className="form-control" placeholder="Date of Birth"/>
+                    <input type="date" className="form-control" placeholder="Date of Birth" />
                 </div>
                 <div>
                     <select className="form-control">
@@ -29,7 +36,22 @@ const Signup = () => {
                     </select>
                 </div>
                 <div>
-                    <input type="text" className="form-control" placeholder="Home Address"/>
+                    <CountryDropdown
+                        value={country}
+                        onChange={(e, value) => setCountry(value)}
+                        placeholder="Select Country" 
+                    />
+                </div>
+                <div>
+                    <StateDropdown
+                        country={country}
+                        value={state}
+                        onChange={(e, value) => setState(value)}
+                        placeholder="Select State"
+                    />
+                </div>
+                <div>
+                    <input type="text" className="form-control" placeholder="Home Address" />
                 </div>
                 <div>
                     <input type="password" className="form-control" placeholder="Password" />
@@ -42,7 +64,7 @@ const Signup = () => {
                 </div>
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default Signup;
