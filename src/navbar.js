@@ -38,28 +38,48 @@ const Navbar = () => {
         }
     }, []);
 
+    // State to manage the visibility of the menu on mobile
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    // Function to toggle the menu
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    // Function to close the menu
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
+
     return (
         <nav className={navbar ? "navba navbar-active" : "navba"}>
             <div className="nav-logo">
                 <Link to="/">
-                <img src={my_image} width="100px" height="100px"/>
+                    <img src={my_image} width="100px" height="100px" />
                 </Link>
             </div>
-            <div className={navlink ? "nav-link nav-link-active" : "nav-link"}>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About Us</Link></li>
-                    <li><Link to="/contact">Contact Us</Link></li>
-                    <li><Link to="/blog">Blog</Link></li>
-                </ul>
-            </div>
-            <div className="nav-button">
-                <Link to="/login">
-                    <button>Login</button>
-                </Link>
-                <Link to="/signup">
-                    <button>Register</button>
-                </Link>
+            <button className="navbar-toggle" onClick={toggleMenu} aria-label="Toggle navigation">
+                <span className="hamburger">
+                    <i class="ri-bar-chart-horizontal-line"></i>
+                </span>
+            </button>
+            <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`} onClick={closeMenu}>
+                <div className={navlink ? "nav-link nav-link-active" : "nav-link"}>
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About Us</Link></li>
+                        <li><Link to="/contact">Contact Us</Link></li>
+                        <li><Link to="/blog">Blog</Link></li>
+                    </ul>
+                </div>
+                <div className="nav-button">
+                    <Link to="/login">
+                        <button>Login</button>
+                    </Link>
+                    <Link to="/signup">
+                        <button>Register</button>
+                    </Link>
+                </div>
             </div>
         </nav>
         // <nav class="navbar navbar-expand-lg bg-body-tertiary">

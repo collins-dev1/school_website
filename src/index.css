@@ -9,7 +9,7 @@
 .navba{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 10px;
   background-color: transparent;
@@ -34,6 +34,8 @@
   align-items: center;
   gap: 2rem;
   list-style: none;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .nav-link-active ul li a{
@@ -60,6 +62,8 @@
 .nav-button{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -83,6 +87,66 @@
     6px 6px 15px rgba(0, 0, 0, 0.3),  
     -6px -6px 15px rgba(255, 255, 255, 0.9); 
   transform: translateY(-3px);
+}
+
+/* Navbar Menu Styling */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hamburger Button Styling (Hidden by default) */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.hamburger {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  /* Hide the menu by default on mobile */
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 60px; /* Adjust based on your navbar height */
+    left: 0;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-menu .nav-link ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: -1rem;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  /* Show the hamburger button on mobile */
+  .navbar-toggle {
+    display: flex;
+  }
 }
 
 .carousel-item{
