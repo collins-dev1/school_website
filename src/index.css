@@ -731,15 +731,20 @@ transition: all 0.3s ease-in-out;
   padding-bottom: 0.8rem;
 }
 
-.country{
-  max-width: 100% !important;
+.country1{
+  width: 100% !important;
   padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-  margin-bottom: 10px;
+  border-radius: 2rem;
   background-color: #f9f9f9;
-  color: #333;
+  color: #000;
+}
+
+#state1{
+  width: 100% !important;
+  padding: 10px;
+  border-radius: 2rem;
+  background-color: #f9f9f9;
+  color: #000;
 }
 
 .login-container .forget a{
@@ -793,7 +798,7 @@ transition: all 0.3s ease-in-out;
   top: 0;
   left: 0;
   width: 100%;
-  height: 1000px;
+  height: 1610px;
   background-color: rgba(0, 0, 0, 0.7); /* Black with 50% opacity */
   z-index: 1;
 }

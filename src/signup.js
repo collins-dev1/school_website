@@ -36,14 +36,14 @@ const Signup = () => {
                     </select>
                 </div>
                 <div>
-                    <CountryDropdown className="country"
+                    <CountryDropdown className="country1"
                         value={country}
                         onChange={(e, value) => setCountry(value)}
                         placeholder="Select Country" 
                     />
                 </div>
                 <div>
-                    <StateDropdown className="country"
+                    <StateDropdown id="state1"
                         country={country}
                         value={state}
                         onChange={(e, value) => setState(value)}
@@ -55,6 +55,13 @@ const Signup = () => {
                 </div>
                 <div>
                     <input type="password" className="form-control" placeholder="Password" />
+                </div>
+                <div>
+                    <input type="password" className="form-control" placeholder="Confirm Password"/>
+                </div>
+                <div>
+                    <input type="checkbox"/>
+                    <span className="px-2">I Agree with the <Link>Terms</Link> and <Link>Condition</Link></span>
                 </div>
                 <div className="signup-button">
                     <button>Register</button>
