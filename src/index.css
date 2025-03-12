@@ -111,10 +111,15 @@
 }
 
 .hamburger {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background-color: white;
   margin: 4px 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Mobile View */
@@ -147,6 +152,38 @@
   .navbar-toggle {
     display: flex;
   }
+
+  .carousel-item img{
+    object-fit: cover;
+  }
+
+  .total{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+   padding-inline: 1rem;
+   position: relative;
+  }
+
+  .total div{
+    padding-inline: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .total div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .total div h5{
+    font-size: 1rem;
+  }
+  
 }
 
 .carousel-item{
