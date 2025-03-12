@@ -7,6 +7,7 @@ import Login from './login';
 import Navbar from './navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import Signup from './signup';
+import './index.css';
 
 function App() {
   return (
