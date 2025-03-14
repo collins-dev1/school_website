@@ -199,6 +199,15 @@
     background-image: linear-gradient(to bottom left,#FFF605, #00195F) !important;
     padding: 3rem !important;
   }
+
+  .about-pic{
+    padding: 5rem !important;
+  }
+
+  .about-second{
+    display: flex;
+    flex-direction: column !important;
+  }
 }
 
 .carousel-item{
