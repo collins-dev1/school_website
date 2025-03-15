@@ -176,6 +176,7 @@
    flex-direction: column !important;
    justify-content: center;
    align-items: center;
+   padding-inline: 2rem !important;
   }
 
   .total div{
@@ -253,6 +254,33 @@
   .login-main::before {
     height: 825px !important;
   }
+
+  .login-container{
+    padding-inline: 2rem !important;
+  }
+
+  .signup-main{
+    padding: 2rem !important;
+  }
+
+  .signup-text{
+    margin-top: 5rem !important;
+  }
+
+  .signup-main::before{
+    height: 1435px !important;
+  }
+
+  .signup-container{
+    padding-inline: 2rem !important;
+  }
+
+  .foot-hold{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem !important;
+  }
 }
 
 .carousel-item{
@@ -262,6 +290,13 @@
 
 .carousel-inner {
   position: relative;
+}
+
+.foot-hold{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .carousel-inner::before {
