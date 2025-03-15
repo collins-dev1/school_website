@@ -237,6 +237,22 @@
   .full-name input{
     width: 400px !important;
   }
+
+  .blog-header{
+    padding: 5rem !important;
+  }
+
+  .login-main{
+    padding: 2rem !important;
+  }
+
+  .login-text{
+    margin-top: 5rem !important;
+  }
+
+  .login-main::before {
+    height: 825px !important;
+  }
 }
 
 .carousel-item{
