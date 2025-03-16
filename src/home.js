@@ -8,7 +8,7 @@ import course2 from "./asset/course2.jpeg";
 import course3 from "./asset/course3.jpeg";
 import course4 from "./asset/course4.jpeg";
 import course5 from "./asset/course5.jpeg";
-import course6 from "./asset/course6.jpeg";
+import course6 from "./asset/course6.jpeg"; 
 
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
 
                             }}>A good education is a foundation for better future</h5>
                             <p>A community with high expectation and high academic achievement.</p>
-                            <button>Get Started</button>
+                            <Link to="/login"><button>Get Started</button></Link>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -37,7 +37,7 @@ const Home = () => {
 
                             }}>A good education is a foundation for better future</h5>
                             <p>A community with high expectation and high academic achievement.</p>
-                            <button>Get Started</button>
+                            <Link to="/login"><button>Get Started</button></Link>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -49,7 +49,7 @@ const Home = () => {
 
                             }}>A good education is a foundation for better future</h5>
                             <p>A community with high expectation and high academic achievement.</p>
-                            <button>Get Started</button>
+                            <Link to="/login"><button>Get Started</button></Link>
                         </div>
                     </div>
                 </div>
